@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+body header {
+  width: 600px !important;
+  text-align: center;
+  padding-top: 20px;
+}
+body header h1 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+}
+body header h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 31px;
+}
+body header p {
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+  margin: 20px 0;
+}
+body .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+body .cards .middle {
+  width: 350px;
+}
+body .cards .middle .card {
+  margin-bottom: 25px;
+}
+body .cards .card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 10px 30px 0px #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+body .cards .card:hover {
+  transform: translateY(-10px);
+}
+body .cards .card h3 {
+  color: hsl(234, 12%, 34%);
+}
+body .cards .card p {
+  color: hsl(229, 6%, 66%);
+}
+body .cards .card img {
+  width: 64px;
+  align-self: flex-end;
+  margin-top: 60px;
+}
+body .cards .card.one {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+body .cards .card.two {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+body .cards .card.three {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+body .cards .card.four {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 90% !important;
+    margin: 20px !important;
+  }
+  body header h1 {
+    font-size: 26px;
+  }
+  body header h2 {
+    font-size: 25px;
+  }
+  body header p {
+    font-size: 15px;
+  }
+  body .cards {
+    flex-direction: column;
+    gap: 20px 0px;
+    margin-top: 30px !important;
+  }
+  body .cards .card {
+    width: 300px !important;
+    margin: 0 !important;
+  }
+  body .cards .middle {
+    margin-right: -50px !important;
+  }
+  body .cards .middle .card:nth-child(1) {
+    margin-bottom: 25px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
